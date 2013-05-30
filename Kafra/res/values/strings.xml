@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kafra požrtija</string>
+    <string name="kafra_content">I\'m\nhungry</string>
+    <string name="pon_button">Pon</string>
+    <string name="tor_button">Tor</string>
+    <string name="sre_button">Sre</string>
+    <string name="cet_button">Čet</string>
+    <string name="pet_button">Pet</string>
+
+</resources>

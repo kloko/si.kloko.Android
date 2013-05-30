@@ -1,0 +1,10 @@
+Size and Format
+
+Launcher icons should be 32-bit PNGs with an alpha channel for transparency.
+
+(Low density)		ldpi	(120 dpi)	36x36 px
+(Medium density)	mdpi	(160 dpi)	48x48 px
+(High density)		hdpi	(240 dpi)	72x72 px
+(Extra-high density)	xhdpi	(320 dpi)	96x96 px
+
+If you are publishing your app on Google Play, you will also need to provide a 512 x 512 pixel

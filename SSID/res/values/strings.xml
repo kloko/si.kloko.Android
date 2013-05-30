@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Network status display</string>
+    <string name="app_settings">Application settings</string>
+    <string name="app_info">No info available!</string>
+    <string name="app_ok">OK</string>
+    <string name="app_cancel">Cancel</string>
+    <string name="app_color">Select background color</string>
+
+</resources>
