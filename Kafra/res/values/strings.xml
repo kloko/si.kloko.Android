@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Kafra požrtija</string>
+    <string name="app_name">Harfa jedilnik</string>
     <string name="kafra_content">I\'m\nhungry</string>
     <string name="pon_button">Pon</string>
     <string name="tor_button">Tor</string>

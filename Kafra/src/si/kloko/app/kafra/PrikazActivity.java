@@ -25,10 +25,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- * 
- * @see SystemUiHider
+ * full-screen activity that shows and hides the system UI (i.e. status bar and
+ * navigation/system bar) with user interaction.
  */
 public class PrikazActivity extends Activity {
 	/**
@@ -240,14 +238,20 @@ public class PrikazActivity extends Activity {
 				// get html document structure
 				Document document = Jsoup.connect(url[0]).userAgent("Mozilla").get();
 
-				// aktualni teden
+				// oznaka za aktualni teden
 				Elements kafraLines = document.select("div#kPadding > .kDatum");
-				result = result + kafraLines.get(0).text();
+				if (kafraLines.isEmpty())
+					result = "Manjka vnos tekoèi teden...";
+				else
+					result = result + kafraLines.get(0).text();
 				result = result + "\n";
 
 				// izbrani dan
 				kafraLines = document.select("div#kMenu > a[style*=none]");
-				result = result + "\n" + kafraLines.get(0).text();
+				if (kafraLines.isEmpty())
+					result = "Manjka vnos današnji dan...";
+				else
+					result = result + "\n" + kafraLines.get(0).text();
 				result = result + "\n";
 
 				// menu za izbrani dan
